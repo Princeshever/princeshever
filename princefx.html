@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HopeBridge Charity - Bridging Hope into Action</title>
+    <meta name="description" content="HopeBridge is a nonprofit organization dedicated to expanding access to education, healthcare, and nutrition for children and families in need." />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="HopeBridge Charity">
+        <img src="image/logo.jpeg" alt="" class="brand-logo" />
+        <span class="brand-name">HopeBridge</span>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#donate" class="btn btn-primary">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Bridge hope into action</h1>
+          <p>Together, we expand access to education, healthcare, and nutrition for children and families.</p>
+          <div class="hero-cta">
+            <a href="#donate" class="btn btn-primary">Donate now</a>
+            <a href="#programs" class="btn btn-secondary">Explore programs</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="image/mn.jpg" alt="Children learning together in a classroom" />
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section">
+      <div class="container">
+        <h2>Our mission</h2>
+        <p>We partner with local communities to remove barriers and create lasting opportunities. Your support fuels scholarships, clinic outreach, and food security.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Education</h3>
+            <p>Scholarships, school supplies, and teacher training.</p>
+          </article>
+          <article class="card">
+            <h3>Health</h3>
+            <p>Mobile clinics, vaccination drives, and maternal care.</p>
+          </article>
+          <article class="card">
+            <h3>Nutrition</h3>
+            <p>School meals, community gardens, and food parcels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section section-alt">
+      <div class="container">
+        <h2>Programs</h2>
+        <div class="program-grid">
+          <article class="program">
+            <img src="image/m.jpg" alt="Students receiving school supplies" />
+            <div>
+              <h3>Back-to-school kits</h3>
+              <p>Providing essential supplies and mentorship to keep children learning.</p>
+            </div>
+          </article>
+          <article class="program">
+            <img src="image/nurse.jpg" alt="Nurse providing a health check" />
+            <div>
+              <h3>Community health days</h3>
+              <p>Free screenings and health education delivered where it’s needed most.</p>
+            </div>
+          </article>
+          <article class="program">
+            <img src="image/meal.jpg" alt="Volunteers distributing meals" />
+            <div>
+              <h3>Meals that matter</h3>
+              <p>Daily school meals to support attendance and focus.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section">
+      <div class="container">
+        <h2>Impact</h2>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number" data-target="1500">0</span>
+            <span class="stat-label">Students supported</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="25">0</span>
+            <span class="stat-label">Clinics delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="60000">0</span>
+            <span class="stat-label">Meals served</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="section section-alt">
+      <div class="container donate-wrap">
+        <h2>Donate</h2>
+        <p>Your contribution directly funds local, measurable change. Choose an amount or enter your own.</p>
+        <form id="donation-form" class="donation-form" novalidate>
+          <fieldset>
+            <legend class="sr-only">Donation amount</legend>
+            <div class="amounts">
+              <button type="button" class="amount-btn" data-amount="10">10</button>
+              <button type="button" class="amount-btn" data-amount="25">25</button>
+              <button type="button" class="amount-btn" data-amount="50">50</button>
+              <button type="button" class="amount-btn" data-amount="100">100</button>
+              <div class="custom-amount">
+                <label for="amount" class="sr-only">Custom amount</label>
+                <input id="amount" name="amount" type="number" min="1" step="1" placeholder="Custom amount" inputmode="numeric" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="sr-only">Donor info</legend>
+            <div class="grid-2">
+              <div>
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" required />
+                <small class="error" id="name-error"></small>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+                <small class="error" id="email-error"></small>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="donation-summary">
+            <p><strong>Total:</strong> <span id="donation-total">0</span></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Donate securely</button>
+          <p class="donation-note">This demo uses a test workflow. Connect a payment provider before going live.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+          <div class="grid-2">
+            <div>
+              <label for="contact-name">Full name</label>
+              <input id="contact-name" name="name" type="text" required />
+            </div>
+            <div>
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" required />
+            </div>
+          </div>
+          <div>
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary">Send message</button>
+          <p class="donation-note">Replace the form action with your Formspree or backend endpoint.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h3>HopeBridge</h3>
+        <p>Registered nonprofit committed to community-driven impact.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <ul class="footer-links">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> HopeBridge Charity. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="Jv.js"></script>
+</body>
+</html>
+
